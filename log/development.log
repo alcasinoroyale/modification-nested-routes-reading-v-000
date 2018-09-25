@@ -3900,3 +3900,12 @@ Unpermitted parameter: author_id
   [1m[36m (58.4ms)[0m  [1mcommit transaction[0m
 Redirected to http://165.227.81.218:47256/posts/17
 Completed 302 Found in 63ms (ActiveRecord: 59.1ms)
+
+
+Started GET "/posts/17" for 100.1.232.137 at 2018-09-25 20:15:38 +0000
+Cannot render console from 100.1.232.137! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
